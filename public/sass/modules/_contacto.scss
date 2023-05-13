@@ -1,0 +1,74 @@
+.contacto{
+    background-image: url(../img/map-image.png);
+    background-color: #212529;
+    background-repeat: no-repeat;
+    background-position: center;
+    &__contenedor{
+        &__form{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 3rem;
+            justify-content: center;
+            row-gap: 3rem;
+            &__col{
+                width: calc(50% - 1.5rem);
+                display: flex;
+                flex-direction: column;
+                row-gap: 3rem;
+                @media only screen and (max-width: $bp-medium){
+                    width: 100%;
+                }
+                &--formGroup{
+                    input,
+                    textarea{
+                        width: 100%;
+                        padding: 2rem;
+                        box-sizing: border-box;
+                        font-family: $font-roboto;
+                        font-size: 1.6rem;
+                        border-radius: .5rem;
+                        outline: 0;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    .alert-contacto {
+        position: fixed;
+        top: 35%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        // display: block; /* Ocultar el alerta por defecto */
+        
+        .alert {
+            background-color: #209204;
+            color: #e2e7e2;
+            border: 1px solid #209204;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+            position: relative;
+            .close-btn {
+                position: absolute;
+                top: 5px;
+                right: 18px;
+                font-family: $font-roboto;
+                font-size: 2.6rem;
+                font-weight: bold;
+                cursor: pointer;
+              }
+            .letra-alert{
+                font-family: $font-roboto;
+                font-size: 2rem;
+                font-weight: 400;
+            }
+        }                  
+    }
+}
+.block-contacto{
+    display: block;
+}
+.none-contacto{
+    display: none;
+}

@@ -1,0 +1,30 @@
+.servicios{
+    &__contenedor{
+        &__box{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 2rem;
+            &__item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: calc(100% / 3 - 2rem);
+                @media only screen and (max-width: $bp-medium){
+                    width: 100%;
+                }
+                &--icon{
+                    width: 12.8rem;
+                    height: 12.8rem;
+                    background-color: #fed136;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 6.4rem;
+                }
+            }
+        }
+    }
+}

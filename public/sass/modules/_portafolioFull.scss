@@ -1,0 +1,94 @@
+.portafolioFull{
+    &__contenedor{
+        padding-top: 5.8rem;
+        height: calc(100vh - 5.8rem);
+        // background-color: peru;
+        display: flex;
+        flex-wrap: wrap;
+        &__imgCol{
+            width: 40%;
+            background-image: url(../img/portafolio/01-full.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+        }
+        &__dataCol{
+            height: 100%;
+            overflow-y: scroll;
+            width: 60%;
+            padding: 5rem 3rem;
+            box-sizing: border-box;
+            &__datos{
+                display: flex;
+                justify-content: space-between;
+                font-family: $font-mont;
+                font-size: 1.6rem;
+                color: #6c757d;
+                &__col{
+                    span, i{
+                        color: black;
+                    }
+                }
+            }
+            &__contenido{
+                color: #6c757d;
+                font-family: $font-roboto;
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                p{
+                    padding: 1rem 0;
+                }
+            }
+            &__form{
+                &--formGroup{
+                    &:not(:last-child){
+                        margin-bottom: 2rem;
+                    }
+                    input,
+                    textarea{
+                        width: 100%;
+                        padding: 2rem;
+                        font-size: 1.6rem;
+                        font-family: $font-roboto;
+                        border-radius: .5rem;
+                        outline: 0;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+            &__comentarios{
+                &__box{
+                    &:not(:last-child){
+                        margin-bottom: 3rem;
+                    }
+                    display: flex;
+                    &__colImg{
+                        width: 5rem;
+                        height: 5rem;
+                        img{
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                    &__colData{
+                        width: calc(100% - 50px);
+                        padding: 0 2rem;
+                        &__head{
+                            display: flex;
+                            justify-content: space-between;
+                            font-family: $font-mont;
+                            color: rgba(black, .7);
+                            font-size: 1.4rem;
+                            font-weight: 600;
+                        }
+                        &--comentario{
+                            font-family: $font-roboto;
+                            font-size: 1.5rem;
+                            color: #6c757d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

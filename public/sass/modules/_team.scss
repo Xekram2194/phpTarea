@@ -1,0 +1,52 @@
+.team{
+    background-color: #e3dfdfbb;
+    &__contenedor{
+
+        &__cards{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            @media only screen and (max-width: $bp-large){
+                flex-direction: column;
+            }
+            &__items{
+                margin-top: 2.3rem;
+                gap: 2rem;
+                &__imgBox{
+                    width: 20rem;
+                    height: 20rem;
+                    border: .6rem solid #e9ecef;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                }
+                &__panel{
+
+                    &--icons{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    i{
+                        text-align: center;
+                        width: 2rem;
+                        height: 2rem;
+                        background-color: #000;
+                        border: .8rem solid #000;
+                        border-radius: 50%;
+                        color: #fff;
+                        font-size: 1.6rem;
+                    }
+                    }
+                }
+            }
+        }
+        &__resumen{
+            padding-top: 3rem ;
+            max-width: 100rem;
+            margin: auto;
+        }
+    }
+}
