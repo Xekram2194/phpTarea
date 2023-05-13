@@ -48,6 +48,10 @@
             if (isset($_GET['com_desaprobados'])) {
                 include(VIEW_BACK . DS . "com_desaprobados.php");
             }
+            if (isset($_GET['contacto'])) {
+                include(VIEW_BACK . DS . "contacto.php");
+            }
+            
             ?>
         </div>
         <!-- /.container-fluid -->

@@ -41,6 +41,11 @@
                     <i class="fas fa-comments"></i>
                     <span>Comentarios</span></a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index.php?contacto">
+                    <i class="fas fa-comments"></i>
+                    <span>Contacto</span></a>
+            </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">

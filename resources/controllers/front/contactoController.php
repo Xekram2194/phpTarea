@@ -10,6 +10,6 @@ function sendMessage()
         query("INSERT INTO contacto (con_nombre,con_correo,con_telefono,con_mensaje,con_fecha) VALUES ('{$con_name}','{$con_correo}','{$con_phone}','{$con_mensaje}', NOW())");
         set_mensaje(setalert("Mensaje Enviado Correctamente"));
 
-        redirect("http://localhost/dw2023-1/04%20CMS/public/#5");
+        redirect("http://localhost:8888/phpTarea/public/#5");
     }
 }

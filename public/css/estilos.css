@@ -717,7 +717,7 @@ a {
 .contacto .alert-contacto {
   position: fixed;
   top: 35%;
-  left: 90%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .contacto .alert-contacto .alert {
