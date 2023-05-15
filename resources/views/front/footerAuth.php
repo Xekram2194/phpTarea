@@ -11,6 +11,7 @@
 <!-- Custom scripts for all pages-->
 <script src="admin/js/sb-admin-2.min.js"></script>
 
+<script src="js/codigo.js"></script>
 </body>
 
 </html>

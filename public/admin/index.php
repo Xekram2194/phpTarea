@@ -51,6 +51,9 @@
             if (isset($_GET['contacto'])) {
                 include(VIEW_BACK . DS . "contacto.php");
             }
+            if (isset($_GET['contacto_send'])) {
+                include(VIEW_BACK . DS . "contacto_send.php");
+            }
             
             ?>
         </div>

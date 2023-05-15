@@ -14,3 +14,4 @@ require_once("controllers/back/headerController.php");
 require_once("controllers/back/portafolioController.php");
 require_once("controllers/back/comentarioController.php");
 require_once("controllers/back/dashController.php");
+require_once("controllers/back/contactoController.php");

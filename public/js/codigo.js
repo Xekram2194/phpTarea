@@ -46,9 +46,9 @@ alertBtn.addEventListener('click', function() {
 //         alertContainer.style.display = 'none';
 //       }, duration);
 // }
-    closeBtn.addEventListener('click', function() {
-        alertContainer.style.display = 'none';
-    });    
+closeBtn.addEventListener('click', function() {
+    alertContainer.style.display = 'none';
+});    
 
 
 
