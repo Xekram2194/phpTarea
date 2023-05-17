@@ -5,7 +5,7 @@
 
     <?php
     $fila = getContactosend();
-    getMessage($fila['con_nombre'], $fila['con_correo']);
+    getMessage($fila['con_nombre'], $fila['con_correo'], $fila['con_id']);
     ?>
     <div class="col-md-6">
         <div class="card shadow mb-3">

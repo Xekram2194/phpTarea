@@ -5,16 +5,14 @@
     <div class="col-md-12">
         <div class="card shadow mb-3">
             <div class="card-body">
-                <a href="index.php?men_respondidos" class="btn btn-success"> Mensajes Respondidos </a>
-                <!-- <a href="index.php?com_desaprobados" class="btn btn-primary ml-2">Mensajes sin Respuesta</a> -->
-                <a href="index.php?men_ignorados" class="btn btn-warning ml-2">Mensajes Ignorados</a>
+                <a href="index.php?contacto" class="btn btn-primary"><i class="fas fa-plus"></i> Regresar </a>
             </div>
         </div>
         <?php
         mostrar_msj(); ?>
         <div class="car shadow">
             <div class="card-header">
-                <h6 class="text-primary mb-0">Mensajes recibidos</h6>
+                <h6 class="text-primary mb-0">Mensajes Ignorados</h6>
             </div>
             <div class="card-body">
                 <table class="table table-hover table-responsive">
@@ -25,16 +23,13 @@
                         <th>Telefono</th>
                         <th>Mensaje</th>
                         <th>Fecha de Envio</th>
-                        <th>Responder</th>
-                        <th>Ignorar</th>
+                        <th>Accion</th>
                     </thead>
                     <tbody>
-                        <?php getcontacto(0, 0) ?>
+                        <?php getcontacto(0, 1) ?>
                     </tbody>
                 </table>
-                <?php ignorarItem();
-                designorarItem();
-                ?>
+                <?php designorarItem(); ?>
             </div>
         </div>
     </div>
