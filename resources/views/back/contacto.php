@@ -10,6 +10,8 @@
                 <a href="index.php?com_desaprobados" class="btn btn-warning ml-2">Mensajes Ignorados</a>
             </div>
         </div>
+        <?php
+        mostrar_msj(); ?>
         <div class="car shadow">
             <div class="card-header">
                 <h6 class="text-primary mb-0">Mensajes recibidos</h6>
@@ -27,7 +29,7 @@
                         <th>Ignorar</th>
                     </thead>
                     <tbody>
-                       <?php getcontacto(0,0) ?>
+                        <?php getcontacto(0, 0) ?>
                     </tbody>
                 </table>
             </div>

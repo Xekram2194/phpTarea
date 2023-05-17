@@ -20,7 +20,7 @@
         <div class="container-fluid">
             <!-- ⚡⚡ AQUI VAMOS A CARGAR LAS VISTAS SEGUN EL MENU ⚡⚡ -->
             <?php
-            if ($_SERVER['REQUEST_URI'] == '/dw2023-1/04%20CMS/public/admin/' || $_SERVER['REQUEST_URI'] == '/dw2023-1/04%20CMS/public/admin/index.php' || $_SERVER['REQUEST_URI'] == '/admin/' || $_SERVER['REQUEST_URI'] == '/admin/index.php') {
+            if ($_SERVER['REQUEST_URI'] == 'phpTarea/public/admin/' || $_SERVER['REQUEST_URI'] == 'phpTarea/public/admin/index.php' || $_SERVER['REQUEST_URI'] == '/admin/' || $_SERVER['REQUEST_URI'] == '/admin/index.php') {
                 include(VIEW_BACK . DS . "dashboard.php");
             }
 
@@ -54,7 +54,7 @@
             if (isset($_GET['contacto_send'])) {
                 include(VIEW_BACK . DS . "contacto_send.php");
             }
-            
+
             ?>
         </div>
         <!-- /.container-fluid -->

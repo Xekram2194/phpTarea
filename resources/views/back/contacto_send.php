@@ -3,7 +3,10 @@
 </div>
 <div class="row">
 
-<?php $fila = getContactosend(); ?>
+    <?php
+    $fila = getContactosend();
+    getMessage($fila['con_nombre'], $fila['con_correo']);
+    ?>
     <div class="col-md-6">
         <div class="card shadow mb-3">
             <div class="card-body">
@@ -17,15 +20,15 @@
             <div class="card-body">
                 <form method="post" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="por_titulo">Asunto</label>
-                        <input type="text" class="form-control" id="por_titulo" name="por_titulo">
+                        <label for="con_asunto">Asunto</label>
+                        <input type="text" class="form-control" id="con_asunto" name="con_asunto">
                     </div>
                     <div class="form-group">
-                        <label for="por_contenido">Mensaje</label>
-                        <textarea name="por_contenido" id="por_contenido" rows="3" class="form-control"></textarea>
+                        <label for="con_mensaje">Mensaje</label>
+                        <textarea name="con_mensaje" id="con_mensaje" rows="3" class="form-control"></textarea>
                     </div>
                     <div class="d-grid gap-2 col-2 mx-auto">
-                        <input type="submit" value="Enviar" class="btn btn-outline-success btn-lg" name="Enviar">
+                        <input type="submit" value="Enviar" class="btn btn-outline-success btn-lg" name="enviar">
                     </div>
                 </form>
                 <?php ?>
